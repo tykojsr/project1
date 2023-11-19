@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Input Page</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <p class="h1" style="text-align: center;" id="message"></p>
+    <div class="container">
+        <div class="col-lg-6 mt-5 mt-lg-5">
+            <!-- Form for personal information start -->
+            <form id="website-content-form">
+                <div class="form-group">
+                    <label for="name">Name : </label>
+                    <input type="text" id="name">
+                    <span id="name-error" class="alert alert-danger" style="display: none;">Enter your
+                        Name</span>
+                </div>
+                <!-- WebApp Name end -->
+
+                <!-- Home Page Starts -->
+                <div class="form-group">
+                    <label for="age"> Age: </label>
+                    <input type="text" id="age">
+                    <span id="age-error" class="alert alert-danger" style="display: none;">Enter your
+                        Age</span>
+                </div>
+                <div>
+                    <label for="address">Address : </label>
+                    <input type="text" id="address">
+                    <span id="address-error" class="alert alert-danger" style="display: none;">Enter your
+                        Address</span>
+                </div>
+                <div>
+                    <label for="phonenumber">PhoneNumber: </label>
+                    <input type="number" id="phonenumber">
+                    <span id="phonenumber-error" class="alert alert-danger" style="display: none;">Enter Your
+                        PhoneNumber</span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="HomepageSubmit">
+                </div>
+            </form>
+            <!-- Home Page Ends -->
+            <form id="font-form">
+                <div class="form-group">
+                    <label for="fontFamily">Font Family:</label>
+                    <select id="fontFamily">
+                        <option value="">Select one</option>
+                        <option value="Roboto, sans-serif">Roboto</option>
+                        <option value="Arial, sans-serif">Arial</option>
+                        <option value="Verdana, sans-serif">Verdana</option>
+                        <option value="Helvetica, sans-serif">Helvetica</option>
+                        <option value="Georgia, serif">Georgia</option>
+                        <option value="Times New Roman, serif">Times New Roman</option>
+                        <option value="Trebuchet MS, sans-serif">Trebuchet MS</option>
+                        <option value="Impact, sans-serif">Impact</option>
+                        <option value="Courier New, monospace">Courier New</option>
+                        <option value="Lucida Console, monospace">Lucida Console</option>
+                        <option value="Palatino Linotype, Book Antiqua, Palatino, serif">Palatino Linotype</option>
+                    </select>
+                    <span id="fontFamily-error" class="alert alert-danger" style="display: none;">Select a Font
+                        Family</span>
+                </div>
+                <div class="form-group>
+                    <label for=" fontPreview">Font Preview:</label>
+                    <p id="fontPreview" style="font-size: 16px;">A quick brown fox jumps over the lazy dog</p>
+                </div>
+                <div class="form-group mt-lg-3">
+                    <label for="fontSize">Font Size:</label>
+                    <select id="fontSize" class="form-control border border-primary">
+                        <option value="">Select one</option>
+                        <option value="12px">12px</option>
+                        <option value="14px">14px</option>
+                        <option value="16px">16px</option>
+                        <option value="18px">18px</option>
+                        <option value="20px">20px</option>
+                        <option value="22px">22px</option>
+                        <option value="24px">24px</option>
+                        <option value="26px">26px</option>
+                        <option value="28px">28px</option>
+                        <option value="30px">30px</option>
+                    </select>
+                    <span id="fontSize-error" class="alert alert-danger" style="display: none;">Select a Font
+                        Size</span>
+                </div>
+                <div class="form-group">
+                    <button type=" submit" id="applyButton" class="btn btn-primary mb-3">Apply</button>
+                </div>
+            </form>
+
+            <!--About Us Starts-->
+
+            <form id="aboutus-content-form">
+                <div class="form-group">
+                    <label for="bio"> Bio: </label>
+                    <input type="text" id="bio">
+                    <span id="bio" class="error-message" style="display: none;">Please enter your
+                        Bio</span>
+                </div>
+                <div class="form-group">
+                    <label for="aboutUsPoints">About Us Points : </label>
+                    <div id="aboutUsPoints" class="about-us-point">
+                        <!-- Point 1 -->
+                        <!-- <div class="about-us-point">
+        Point: <input type="text" class="form-control border border-primary" />
+        <input type="button" class="btn btn-primary delete-point" value="Delete" />
+    </div> -->
+                        <!-- Additional points can be added here -->
+                    </div>
+                    <button id="addAboutUsPoint" type="button">&#10011; Add One More
+                        About Us Point</button>
+                    <span id="aboutUsPoints-error" class="error-message" style="display: none;">Enter About Us
+                        Points</span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="aboutUsSubmit">
+                </div>
+            </form>
+            <!-- About Us Ends -->
+            <!-- Our Education Starts -->
+            <form id="Education-content-form">
+                <div class="form-group">
+                    <h4>Educational Background</h4>
+                </div>
+                <div class="form-group">
+                    <label for="yourEducation">Your Education : </label>
+                    <div id="yourEducation" class="all-our-qualifications">
+                        <!-- Additional education information can be added here -->
+                    </div>
+                    <button id="addEducation" type="button" ">&#10011; Add
+                        your Qualification</button>
+                </div>
+                <div class=" form-group">
+                        <input type="submit" id="educationSubmit">
+                </div>
+            </form>
+            <!-- Our Education Background Ends -->
+            <!-- Our Experience Starts -->
+            <form id="Experience-content-form">
+                <div class="form-group">
+                    <h4>Enter your Experience :</h4>
+                </div>
+                <div>
+                    <label for="yourExperience">Your Experience </label>
+                    <div id="yourExperience" class="all-your-experience">
+
+                        <!-- Additional experience can be added here -->
+                    </div>
+                    <button id="addExperience" type="button" class="btn btn-primary mt-1">&#10011; Add
+                    </button>
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="experienceSubmit" class="btn btn-primary mb-3">
+                </div>
+            </form>
+            <form id="image-content-input">
+                <div>
+                    <label for="formFile" class="form-label">Select File :</label>
+                    <input id="formFile" class="form-control" type="file">
+                    <div id="message"></div>
+                    <button id="uploadButton" type="button" class="btn btn-primary mt-3">Upload</button>
+                </div>
+            </form>
+            <!-- Our Products Ends -->
+
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <script type="module" src="./js/resume.js"></script>
+
+</body>
+
+</html>

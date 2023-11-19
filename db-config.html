@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Portfolio
+    <script type="module">
+        import {
+            doc,
+            setDoc,
+            collection
+        } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore.js";
+        import { app, firestore, storage } from "./js/firebase-config.js";
+
+
+        var homepageDocRef = doc(firestore, "portfolio", "homepage");
+        setDoc(homepageDocRef, {})
+            .then(() => {
+                console.log("Document 'homepage' successfully written!");
+            })
+            .catch((error) => {
+                console.error("Error writing document 'homepage': ", error);
+            });
+
+        var aboutMeDocRef = doc(firestore, "portfolio", "aboutme");
+        setDoc(aboutMeDocRef, {})
+            .then(() => {
+                console.log("Document 'homepage' successfully written!");
+            })
+            .catch((error) => {
+                console.error("Error writing document 'homepage': ", error);
+            });
+
+        var projectsDocRef = doc(firestore, "portfolio", "myProjects");
+        setDoc(projectsDocRef, {})
+            .then(() => {
+                console.log("Document 'homepage' successfully written!");
+            })
+            .catch((error) => {
+                console.error("Error writing document 'homepage': ", error);
+            });
+
+        var contactMeDocRef = doc(firestore, "portfolio", "contactMe");
+        setDoc(contactMeRef, {})
+            .then(() => {
+                console.log("Document 'homepage' successfully written!");
+            })
+            .catch((error) => {
+                console.error("Error writing document 'homepage': ", error);
+            });
+        var resumeDocRef = doc(firestore, "portfolio", "resume");
+        setDoc(resumeRef, {})
+            .then(() => {
+                console.log("Document 'homepage' successfully written!");
+            })
+            .catch((error) => {
+                console.error("Error writing document 'homepage': ", error);
+            });
+
+
+    </script>
+</body>
+
+</html>
